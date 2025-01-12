@@ -132,6 +132,56 @@ overflow-x: hidden;
   color: #009028; /* Escolha a cor desejada */
   /* Outros estilos, se necessário */
 }/* End custom CSS */
+  .video-grid {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 20px;
+	padding: 20px;
+  }
+
+  .video-grid iframe {
+	width: 300px;
+	height: 400px;
+	border: none;
+	border-radius: 10px;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  }
+
+  @media (max-width: 768px) {
+	.video-grid iframe {
+	  width: 90%; /* Ocupa quase toda a largura disponível */
+	  height: auto; /* Ajusta a altura automaticamente */
+	}
+  }
+
+  @media (max-width: 480px) {
+	.video-grid iframe {
+	  width: 100%; /* Largura total para dispositivos menores */
+	  height: auto;
+	}
+  }
+  .image-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 10px;
+	padding: 20px;
+  }
+
+  .image-container img {
+	width: 300px; /* Ajusta a largura */
+	border-radius: 10px; /* Bordas arredondadas */
+	object-fit: cover;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Responsividade */
+  @media (max-width: 768px) {
+	.image-container img {
+	  width: 90%; /* Ajusta a largura para dispositivos menores */
+	}
+  }
 </style>
 <link rel='stylesheet' id='swiper-css' href='https://liftdetoxcaps.com/wp-content/plugins/elementor/assets/lib/swiper/v8/css/swiper.min.css?ver=8.4.5' media='all' />
 <link rel='stylesheet' id='e-swiper-css' href='https://liftdetoxcaps.com/wp-content/plugins/elementor/assets/css/conditionals/e-swiper.min.css?ver=3.25.10' media='all' />
@@ -335,8 +385,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				<div class="elementor-element elementor-element-6ddaa71 elementor-pagination-position-outside elementor-widget elementor-widget-image-carousel" data-id="6ddaa71" data-element_type="widget" data-settings="{&quot;navigation&quot;:&quot;dots&quot;,&quot;slides_to_show&quot;:&quot;3&quot;,&quot;slides_to_show_mobile&quot;:&quot;1&quot;,&quot;slides_to_scroll&quot;:&quot;1&quot;,&quot;autoplay&quot;:&quot;yes&quot;,&quot;pause_on_hover&quot;:&quot;yes&quot;,&quot;pause_on_interaction&quot;:&quot;yes&quot;,&quot;autoplay_speed&quot;:5000,&quot;infinite&quot;:&quot;yes&quot;,&quot;speed&quot;:500,&quot;image_spacing_custom&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:20,&quot;sizes&quot;:[]},&quot;image_spacing_custom_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]}}" data-widget_type="image-carousel.default">
 				<div class="elementor-widget-container">
 					<div class="elementor-image-carousel-wrapper swiper" dir="ltr">
-			<div class="elementor-image-carousel swiper-wrapper" aria-live="off">
-								<div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="1 of 4"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="https://liftdetoxcaps.com/wp-content/uploads/2024/10/Intestino-1.png" alt="Intestino 1" /></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="2 of 4"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="https://liftdetoxcaps.com/wp-content/uploads/2024/10/Apetite-1.png" alt="Apetite 1" /></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="3 of 4"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="https://liftdetoxcaps.com/wp-content/uploads/2024/10/Estrias-1.png" alt="Estrias 1" /></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="4 of 4"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="https://liftdetoxcaps.com/wp-content/uploads/2024/10/Efeito-Lift-1.png" alt="Efeito Lift 1" /></figure></div>			</div>
+						<div class="image-container">
+							<img src="https://liftdetoxcaps.com/wp-content/uploads/2024/10/Intestino-1.png" alt="Intestino">
+							<img src="https://liftdetoxcaps.com/wp-content/uploads/2024/10/Apetite-1.png" alt="Apetite">
+							<img src="https://liftdetoxcaps.com/wp-content/uploads/2024/10/Estrias-1.png" alt="Estrias">
+							<img src="https://liftdetoxcaps.com/wp-content/uploads/2024/10/Efeito-Lift-1.png" alt="Efeito Lift">
+						  </div>
 							
 									<div class="swiper-pagination"></div>
 									</div>
@@ -396,8 +450,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				<div class="elementor-element elementor-element-0b92fc1 elementor-pagination-position-outside elementor-widget elementor-widget-image-carousel" data-id="0b92fc1" data-element_type="widget" data-settings="{&quot;navigation&quot;:&quot;dots&quot;,&quot;autoplay&quot;:&quot;yes&quot;,&quot;pause_on_hover&quot;:&quot;yes&quot;,&quot;pause_on_interaction&quot;:&quot;yes&quot;,&quot;autoplay_speed&quot;:5000,&quot;infinite&quot;:&quot;yes&quot;,&quot;speed&quot;:500,&quot;image_spacing_custom&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:20,&quot;sizes&quot;:[]},&quot;image_spacing_custom_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;image_spacing_custom_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]}}" data-widget_type="image-carousel.default">
 				<div class="elementor-widget-container">
 					<div class="elementor-image-carousel-wrapper swiper" dir="ltr">
-			<div class="elementor-image-carousel swiper-wrapper" aria-live="off">
-								<div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="1 of 6"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="https://liftdetoxcaps.com/wp-content/uploads/2024/10/Quitosana-4-1.png" alt="Quitosana (4) (1)" /></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="2 of 6"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="https://liftdetoxcaps.com/wp-content/uploads/2024/10/Laranja-1.png" alt="Laranja (1)" /></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="3 of 6"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="https://liftdetoxcaps.com/wp-content/uploads/2024/10/Cromo-11-1.png" alt="Cromo (11) (1)" /></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="4 of 6"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="https://liftdetoxcaps.com/wp-content/uploads/2024/10/Espirulina-2-1.png" alt="Espirulina (2) (1)" /></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="5 of 6"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="https://liftdetoxcaps.com/wp-content/uploads/2024/10/Pysillium-1.png" alt="Pysillium (1)" /></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="6 of 6"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="https://liftdetoxcaps.com/wp-content/uploads/2024/10/Colageno-6.png" alt="Colágeno (6)" /></figure></div>			</div>
+						<div class="image-container">
+							<img src="https://liftdetoxcaps.com/wp-content/uploads/2024/10/Quitosana-4-1.png" alt="Imagem 1">
+							<img src="https://liftdetoxcaps.com/wp-content/uploads/2024/10/Laranja-1.png" alt="Imagem 2">
+							<img src="https://liftdetoxcaps.com/wp-content/uploads/2024/10/Cromo-11-1.png" alt="Imagem 3">
+							<img src="https://liftdetoxcaps.com/wp-content/uploads/2024/10/Espirulina-2-1.png" alt="Imagem 4">
+							<img src="https://liftdetoxcaps.com/wp-content/uploads/2024/10/Pysillium-1.png" alt="Imagem 5">
+							<img src="https://liftdetoxcaps.com/wp-content/uploads/2024/10/Colageno-6.png" alt="Imagem 6">
+						  </div>
 							
 									<div class="swiper-pagination"></div>
 									</div>
@@ -430,131 +490,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				<section class="elementor-section elementor-inner-section elementor-element elementor-element-4fb4f69 elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="4fb4f69" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
 						<div class="elementor-container elementor-column-gap-default">
 					<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-6a7811c" data-id="6a7811c" data-element_type="column">
-			<div class="elementor-widget-wrap elementor-element-populated">
-						<div class="elementor-element elementor-element-f4b1093 elementor-testimonial--skin-default elementor-testimonial--layout-image_inline elementor-testimonial--align-center elementor-arrows-yes elementor-pagination-type-bullets elementor-widget elementor-widget-testimonial-carousel" data-id="f4b1093" data-element_type="widget" data-settings="{&quot;slides_per_view&quot;:&quot;4&quot;,&quot;speed&quot;:5000,&quot;autoplay_speed&quot;:500,&quot;show_arrows&quot;:&quot;yes&quot;,&quot;pagination&quot;:&quot;bullets&quot;,&quot;autoplay&quot;:&quot;yes&quot;,&quot;loop&quot;:&quot;yes&quot;,&quot;pause_on_hover&quot;:&quot;yes&quot;,&quot;pause_on_interaction&quot;:&quot;yes&quot;,&quot;space_between&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:10,&quot;sizes&quot;:[]},&quot;space_between_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:10,&quot;sizes&quot;:[]},&quot;space_between_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:10,&quot;sizes&quot;:[]}}" data-widget_type="testimonial-carousel.default">
-				<div class="elementor-widget-container">
-					<div class="elementor-swiper">
-			<div class="elementor-main-swiper swiper">
-				<div class="swiper-wrapper">
-											<div class="swiper-slide">
-									<div class="elementor-testimonial">
-							<div class="elementor-testimonial__content">
-					<div class="elementor-testimonial__text">
-								<div data-elementor-type="section" data-elementor-id="7949" class="elementor elementor-7949" data-elementor-post-type="elementor_library">
-					<section class="elementor-section elementor-top-section elementor-element elementor-element-fb6b8f6 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="fb6b8f6" data-element_type="section">
-						<div class="elementor-container elementor-column-gap-default">
-					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-e94e6c6" data-id="e94e6c6" data-element_type="column">
-			<div class="elementor-widget-wrap elementor-element-populated">
-						<div class="elementor-element elementor-element-482458c elementor-widget elementor-widget-video" data-id="482458c" data-element_type="widget" data-settings="{&quot;youtube_url&quot;:&quot;https:\/\/youtube.com\/embed\/i9274HarmVg?feature=share&quot;,&quot;video_type&quot;:&quot;youtube&quot;,&quot;controls&quot;:&quot;yes&quot;}" data-widget_type="video.default">
-				<div class="elementor-widget-container">
-					<div class="elementor-wrapper elementor-open-inline">
-			<div class="elementor-video"></div>		</div>
-				</div>
-				</div>
-					</div>
+
 		</div>
 					</div>
-		</section>
-				</div>
-							</div>
-									</div>
-						<div class="elementor-testimonial__footer">
-											</div>
-		</div>
-								</div>
-											<div class="swiper-slide">
-									<div class="elementor-testimonial">
-							<div class="elementor-testimonial__content">
-					<div class="elementor-testimonial__text">
-								<div data-elementor-type="section" data-elementor-id="7950" class="elementor elementor-7950" data-elementor-post-type="elementor_library">
-					<section class="elementor-section elementor-top-section elementor-element elementor-element-fb6b8f6 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="fb6b8f6" data-element_type="section">
-						<div class="elementor-container elementor-column-gap-default">
-					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-e94e6c6" data-id="e94e6c6" data-element_type="column">
-			<div class="elementor-widget-wrap elementor-element-populated">
-						<div class="elementor-element elementor-element-4a9a250 elementor-widget elementor-widget-video" data-id="4a9a250" data-element_type="widget" data-settings="{&quot;youtube_url&quot;:&quot;https:\/\/youtube.com\/embed\/mkcaWfW8y3w?feature=share&quot;,&quot;video_type&quot;:&quot;youtube&quot;,&quot;controls&quot;:&quot;yes&quot;}" data-widget_type="video.default">
-				<div class="elementor-widget-container">
-					<div class="elementor-wrapper elementor-open-inline">
-			<div class="elementor-video"></div>		</div>
-				</div>
-				</div>
-					</div>
-		</div>
-					</div>
-		</section>
-				</div>
-							</div>
-									</div>
-						<div class="elementor-testimonial__footer">
-											</div>
-		</div>
-								</div>
-											<div class="swiper-slide">
-									<div class="elementor-testimonial">
-							<div class="elementor-testimonial__content">
-					<div class="elementor-testimonial__text">
-								<div data-elementor-type="section" data-elementor-id="7957" class="elementor elementor-7957" data-elementor-post-type="elementor_library">
-					<section class="elementor-section elementor-top-section elementor-element elementor-element-fb6b8f6 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="fb6b8f6" data-element_type="section">
-						<div class="elementor-container elementor-column-gap-default">
-					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-e94e6c6" data-id="e94e6c6" data-element_type="column">
-			<div class="elementor-widget-wrap elementor-element-populated">
-						<div class="elementor-element elementor-element-044e33f elementor-widget elementor-widget-video" data-id="044e33f" data-element_type="widget" data-settings="{&quot;youtube_url&quot;:&quot;https:\/\/youtube.com\/embed\/jbttWbCbbuI?feature=share&quot;,&quot;video_type&quot;:&quot;youtube&quot;,&quot;controls&quot;:&quot;yes&quot;}" data-widget_type="video.default">
-				<div class="elementor-widget-container">
-					<div class="elementor-wrapper elementor-open-inline">
-			<div class="elementor-video"></div>		</div>
-				</div>
-				</div>
-					</div>
-		</div>
-					</div>
-		</section>
-				</div>
-							</div>
-									</div>
-						<div class="elementor-testimonial__footer">
-											</div>
-		</div>
-								</div>
-											<div class="swiper-slide">
-									<div class="elementor-testimonial">
-							<div class="elementor-testimonial__content">
-					<div class="elementor-testimonial__text">
-								<div data-elementor-type="section" data-elementor-id="7965" class="elementor elementor-7965" data-elementor-post-type="elementor_library">
-					<section class="elementor-section elementor-top-section elementor-element elementor-element-fb6b8f6 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="fb6b8f6" data-element_type="section">
-						<div class="elementor-container elementor-column-gap-default">
-					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-e94e6c6" data-id="e94e6c6" data-element_type="column">
-			<div class="elementor-widget-wrap elementor-element-populated">
-						<div class="elementor-element elementor-element-64ed275 elementor-widget elementor-widget-video" data-id="64ed275" data-element_type="widget" data-settings="{&quot;youtube_url&quot;:&quot;https:\/\/youtube.com\/embed\/PQSSL-aoTmI?feature=share&quot;,&quot;video_type&quot;:&quot;youtube&quot;,&quot;controls&quot;:&quot;yes&quot;}" data-widget_type="video.default">
-				<div class="elementor-widget-container">
-					<div class="elementor-wrapper elementor-open-inline">
-			<div class="elementor-video"></div>		</div>
-				</div>
-				</div>
-					</div>
-		</div>
-					</div>
-		</section>
-				</div>
-							</div>
-									</div>
-						<div class="elementor-testimonial__footer">
-											</div>
-		</div>
-								</div>
-									</div>
-															<div class="swiper-pagination"></div>
-																<div class="elementor-swiper-button elementor-swiper-button-prev" role="button" tabindex="0">
-							<i aria-hidden="true" class="eicon-chevron-left"></i>							<span class="elementor-screen-only">Previous</span>
-						</div>
-						<div class="elementor-swiper-button elementor-swiper-button-next" role="button" tabindex="0">
-							<i aria-hidden="true" class="eicon-chevron-right"></i>							<span class="elementor-screen-only">Next</span>
-						</div>
-												</div>
-		</div>
-				</div>
-				</div>
-					</div>
-		</div>
-					</div>
+					<div class="video-grid">
+						<iframe src="https://www.youtube.com/embed/i9274HarmVg" allowfullscreen></iframe>
+						<iframe src="https://www.youtube.com/embed/mkcaWfW8y3w" allowfullscreen></iframe>
+						<iframe src="https://www.youtube.com/embed/jbttWbCbbuI" allowfullscreen></iframe>
+						<iframe src="https://www.youtube.com/embed/PQSSL-aoTmI" allowfullscreen></iframe>
+					  </div>
 		</section>
 				<section class="elementor-section elementor-inner-section elementor-element elementor-element-cc91eae elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="cc91eae" data-element_type="section">
 						<div class="elementor-container elementor-column-gap-default">
